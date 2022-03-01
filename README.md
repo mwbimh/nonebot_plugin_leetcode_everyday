@@ -7,7 +7,7 @@
 ### 配置
 您可以在 <code>.env</code> 文件中配置如下参数:
 >lce_hour : int -> 订阅发送时间，以北京时间表示，默认为北京时间八点<br><br>
->lce_admin : dict[str , list] -> 管理员，可以识别<code>users</code>和<code>groups</code>键，分别为管理员用户和管理员群，值为qq号/群号数组。例：lce_admin={"users":[123456789]}<br><br>
+>lce_admin : dict[str , list] -> 管理员，可以识别<code>users</code>和<code>groups</code>键，分别为管理员用户和管理员群，值为qq号/群号数组。例：lce_admin={"users":["123456789"]}<br><br>
 >lce_subscriber : dict[str , list] -> 同上，但一般无需配置<br><br>
 >lce_size : dict[str , int] -> 默认值为{"width":500,"height":300}，表示无头浏览器视口大小，影响最终图片大小
 <br><br>
