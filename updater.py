@@ -99,6 +99,7 @@ async def update_today():
 async def shutdown_page():
     await b.close()
     await p.stop()
+    await session.close()
 
 
 async def set_page_size(size: Size):
