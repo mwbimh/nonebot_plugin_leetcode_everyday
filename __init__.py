@@ -11,8 +11,8 @@ global_config = get_driver().config
 config = Config.parse_obj(global_config)
 
 scheduler = require("nonebot_plugin_apscheduler").scheduler
-register = require("broker").register
-subscribe = require("broker").subscribe
+register = require("nonebot_plugin_broker").register
+subscribe = require("nonebot_plugin_broker").subscribe
 
 driver = nonebot.get_driver()
 lce = on_command("每日一题", aliases={"lce"}, rule=to_me(), block=True)
